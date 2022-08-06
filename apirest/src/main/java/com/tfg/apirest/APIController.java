@@ -11,7 +11,7 @@ public class APIController {
 
 
     @GetMapping("/producir")
-    public String sayHello(@RequestParam(value = "myName", defaultValue = "World") String name) {
+    public String producir(@RequestParam(value = "myName", defaultValue = "World") String name) {
         simpleProducer productor = new simpleProducer();
         productor.producerMessage("test");
         return String.format("Hello %s!", name);
@@ -22,5 +22,13 @@ public class APIController {
         return String.format("Hello %s!", name);
 
     }
+
+   // @GetMapping("/consumir")
+  //  public String consumir() {
+       // simpleConsumer consumer = new simpleConsumer();
+       // return String.format("Hello %s!", name);
+       // System.out.println(consumer.getDatos());
+      //  return String.format("%s", consumer.getDatos());
+  //  }
 
 }

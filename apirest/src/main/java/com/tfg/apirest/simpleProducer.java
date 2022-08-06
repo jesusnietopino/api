@@ -29,7 +29,7 @@ public class simpleProducer {
         // flush data - synchronous
         producer.flush();
         // flush and close producer
-        producer.close();
+        //producer.close();
 
 
     }
